@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatorio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="hide-scrollbar">
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+      
+      </div>
+    <div class="wrapper">
+        <div class="head">
+            <h1>Calculatorio</h1>
+            <div>
+                <p>Calculate the price for each frame.</p>
+            </div>
+        </div>
+
+        <div class = "content">
+            <form>
+                <div>
+                    <label id="manu">GPU Manufactor:</label>
+                    <select class="select-box" name="cars" id="cars">
+                        <option value="AMD">AMD</option>
+                        <option value="NVIDIA">NVIDIA</option>
+                    </select>
+                </div>
+                <div class="div-type">
+                    <label id="type">GPU Type</label>
+                    <select class="select-box" name="cars" id="cars">
+                        <option value="RX 390">RX 390</option>
+                        <option value="RX 390X">RX 390X</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <div class="content">
+            <form>
+                <div class="specifc-game-check">
+                    <label> Calculate for specifc game</label>
+                    <input type="checkbox"id="specific"/>
+                </div>
+                <div>
+                    <label class="game-div" id="gamelabel" for="Game">Game you want to play:</label>
+                    <select class="select-box game-div" id = "gameselector">
+                        <option value="CS:GO">CS:GO</option>
+                        <option value="Hunt Showdown">Hunt Showdown</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <div class="conent">
+            <button class="center" id="calc_btn">Calculate</button>
+        </div>
+    </div>
+
+    <div class="ads" >
+        Hier könnte ihre Werbung stehen
+    </div>
+</body>
+<script src="js/ui.js"></script>
+</html>
